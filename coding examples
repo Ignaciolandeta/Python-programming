@@ -1,0 +1,27 @@
+my Certification from https://www.coursera.org/specializations/python
+
+1) EXPRESSIONS
+
+#Order of evaluation rules example;
+y = 1 + 2 * 3 - 8 / 4
+print(y)
+
+#User Input
+nam = input('Who are you?')
+print('Welcome', nam)
+
+
+#Program example: Convert elevator floors
+inp = input('Europe floor?')
+usf = int(inp) + 1
+print('US floor', usf)
+
+
+#2.3 Write a program to prompt the user for hours and rate per hour using input to compute gross pay. Use 35 hours and a rate of 2.75 per hour to test the program (the pay should be 96.25). You should use input to read a string and float() to convert the string to a number. Do not worry about error checking or bad user data.
+hrs = input("Enter Hours: ")
+rate = input('Enter Rate: ')
+gpay = float(hrs) * float(rate)
+print('Pay:', gpay)
+
+
+
