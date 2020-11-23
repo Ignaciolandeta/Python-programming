@@ -134,3 +134,69 @@ try:
 except:
     istr = -1
 print(istr)
+
+
+3) FUNCTIONS
+
+#Function example
+def print_lyrics():
+    print('I am a lumberjack, and I am okay')
+    print('I sleep all night and I work all day')
+print_lyrics() #call the function to run
+
+#Functions: Parameters
+def greet(lang):
+    if lang == 'es':
+        print('Hola')
+    elif lang == 'fr':
+        print('Bonjour')
+    else:
+        print('Hello')
+greet('en')
+greet('es')
+greet('fr')
+
+
+#Functions: Return value
+def greet():
+    return 'Hello'
+print(greet(), 'Glenn')
+print(greet(), 'Sally')
+
+##Functions: Return value2
+def greet(lang):
+    if lang == 'es':
+        return 'Hola'
+    elif lang == 'fr':
+        return 'Bonjour'
+    else:
+        return 'Hello'
+print(greet('en'), 'Gelnn')
+print(greet('es'), 'Sally')
+print(greet('fr'), 'Michael')
+
+
+#Functions: Multiple Parameters and Arguments
+def addtwo(a,b):
+    added = a + b
+    return added
+
+x = addtwo(3, 5)
+print(x)
+
+
+
+#4.6 Write a program to prompt the user for hours and rate per hour using input to compute gross pay. Pay should be the normal rate for hours up to 40 and time-and-a-half for the hourly rate for all hours worked above 40 hours. Put the logic to do the computation of pay in a function called computepay() and use the function to do the computation. The function should return a value. Use 45 hours and a rate of 10.50 per hour to test the program (the pay should be 498.75). You should use input to read a string and float() to convert the string to a number. Do not worry about error checking the user input unless you want to - you can assume the user types numbers properly. Do not name your variable sum or use the sum() function.
+hrs = input("Enter Hours:")
+h = float(hrs)
+rate = input('Enter rate per hour:')
+r = float(rate)
+
+def computepay(h,r):
+    if h <= 40.0:
+        return (h * r)
+    elif h > 40.0:
+        return ((40.0 * r) + ((h - 40.0) * 1.5 * r))
+print("Pay",computepay(h,r))
+
+
